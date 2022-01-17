@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *
+        {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        .clearfix::after
+        {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .wrap
+        {
+            width:1000px;
+            margin:0 auto;
+            background-color:lightblue;
+            /* display:flex;
+            flex-flow:row wrap; */
+            
+        }
+        header
+        {
+            width:200px;
+            /* display:inline-block; */
+            float:left;
+            background-color: red;
+        }
+
+        section
+        {
+            width:600px;
+            background-color:green;
+            /* display:inline-block; */
+            float:left;
+        }
+        footer
+        {
+            width:200px;
+            background-color: blue;
+            float:left;
+            /* display:inline-block; */
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header>HEADER</header>
+        <section>SECTION</section>
+        <footer>FOOTER</footer>
+
+    </section>
+    
+</body>
+</html>
