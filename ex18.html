@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width:300px;
+            height:400px;
+            margin:100px auto;
+            border:1px solid black;
+            /* overflow:hidden; */
+            /* perspective: 400px; */
+        }
+        .child-box
+        {
+        
+            height:100%;
+            background-color:red;
+            font-weight: 900;
+            font-size:50px;
+            line-height: 400px;
+            transform:perspective(400px) rotatey(0);
+            text-align: center;
+            transition:2s;
+        }
+        
+        .box:hover .child-box
+        {
+            transform:rotatey(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="child-box">회전</div>
+    </div>
+</body>
+</html>

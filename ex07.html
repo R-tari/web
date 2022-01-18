@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        .clearfix::after
+        {
+            display:block;
+            content:'';
+            clear:both;
+        }
+        div
+        {
+            position:fixed;
+            width:200px;
+            height:200px;
+        }
+        .box01
+        {
+            
+            background-color: red;
+            left:400px;
+            top:200px;
+            
+        }
+        .box02
+        {
+            
+            background-color: green;
+            left:400px;
+            top:400px;
+            
+        }
+        .box03
+        {
+            background-color:blue;
+            left:400px;
+            top:600px;
+            
+        }
+        .box3-1
+        {
+            left:0;
+            top:0;
+        }
+        .box3-2
+        {
+            bottom:0;
+            right:0;
+        }
+        
+        .box03::after,.box03::before
+        {
+            position:absolute;
+            display:block;
+            height:50px;
+            width:50px;
+            content:'';
+            background-color: cyan;
+        }
+        .box03::after
+        {
+            right:0;
+            top:0;
+        }
+        .box03::before
+        {
+            bottom:0;
+            left:0;
+        }
+    .box03>*
+    {
+        height:50px;
+        width:50px;
+        position:absolute;
+        background-color: cyan;
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="box01"></div>
+    <div class="box02"></div>
+    <div class="box03">
+        <div class="box3-1"></div>
+        <div class="box3-2"></div>
+    </div>
+</body>
+</html>

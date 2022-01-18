@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+
+        img
+        {
+            width:100%;
+            vertical-align: top;
+            
+            opacity: 0.3;
+            transition:0.3s,width 1s;
+        }
+
+        .box
+        {
+            width:500px;
+            margin:0 0 0 0;
+            border:2px solid black;
+            transition:margin 0.3s
+        }
+        .box:hover
+        {
+           transform:translate()
+        }
+       img:hover
+        {
+            width:120%;
+            opacity: 1;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="img-box"><img src="./images/plants-gc09077c62_1280.jpg" alt="이미지"></div>
+    </div>
+    
+</body>
+</html>
